@@ -41,14 +41,28 @@ h2 {
   padding: 2px;
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.14);
   transition: all 0.25s linear;
-  opacity: 0.9;
 }
 
 .portfolioItem:hover {
   position: relative;
-  background: white;
+  background: $backgroundA;
   top: -5px;
   box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.14);
   transition: all 0.05s linear;
-  opacity: 1;
+}
+
+.portfolioItem h1 {
+  color: $spotA
+}
+
+.portfolioItem h2 {
+  color: $spotB
+}
+
+.portfolioItem:active h1 {
+  color: white;
+}
+
+.portfolioItem:active h2 {
+  color: white;
 }
