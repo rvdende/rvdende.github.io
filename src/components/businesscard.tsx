@@ -47,22 +47,23 @@ export class BusinessCard extends Component<Props, State> {
                     </div>
                     <div style={{ paddingTop: 30, paddingLeft: 25 }}>
                         <h1 style={{ color: theme.color.spotA, fontSize: '120%' }}>Rouan van der Ende</h1>
-                        <h2 style={{ color: theme.color.spotB, fontWeight: 'normal', fontSize: '100%' }}>Solution Developer</h2>
+                        <h2 style={{ color: theme.color.spotB, fontWeight: 'normal', fontSize: '100%' }}>Developer</h2>
                     </div>
                 </div>
 
                 <div style={{ position: 'relative', zIndex: 5, height: 150 }}>
-                    <div style={{ position: 'absolute', top: -30, display: 'flex', flexDirection: 'row' }}>
+                    <div style={{ position: 'absolute', top: -30, display: 'flex', flexDirection: 'row', width: '100%' }}>
                         <div>
                             <TabSVG
                                 style={{ background: theme.color.spotA }}
-                                icons={["fas fa-phone-alt", "fas fa-location-arrow", "fas fa-map-marker-alt"]} />
+                                icons={["fas fa-phone-alt", "fas fa-location-arrow", "fas fa-map-marker-alt", "fab fa-github"]} />
                         </div>
 
-                        <div style={{ paddingTop: 20, paddingLeft: 25 }}>
-                            <div style={{ ...entryStyle, ...{ borderBottom: '1px solid gray' } }}>+27 62 933 1183</div>
-                            <div style={{ ...entryStyle, ...{ borderBottom: '1px solid gray' } }}>rvdende.github.io</div>
-                            <div style={entryStyle}>Mosselbay, South Africa</div>
+                        <div style={{ paddingTop: 20, paddingLeft: 25, flex: 1 }}>
+                            <div style={{ ...entryStyle, ...{ borderBottom: '1px solid ' + theme.color.lightgray } }}>+27 62 933 1183</div>
+                            <div style={{ ...entryStyle, ...{ borderBottom: '1px solid ' + theme.color.lightgray } }}><a href="https://rvdende.github.io/">rvdende.github.io</a></div>
+                            <div style={{ ...entryStyle, ...{ borderBottom: '1px solid ' + theme.color.lightgray } }}>Mosselbay, South Africa</div>
+                            <div style={entryStyle}><a href="https://github.com/rvdende">github.com/rvdende</a></div>
                         </div>
                     </div>
                 </div>

@@ -32,7 +32,7 @@ export class TabSVG extends Component<P, P> {
                     }}
                     className={this.state.fontawesomeIcon} />} */}
                 {this.state.icons.map((icon, i) => {
-                    return <div style={{
+                    return <div key={i} style={{
                         position: 'absolute', width: 30, height: 25, left: 2,
                         top: 40 + (50 * i),
                         textAlign: 'center'
@@ -54,9 +54,9 @@ export class TabSVG extends Component<P, P> {
                     {(this.state.icons.length > 1) &&
                         (this.state.icons.map((icon, i) => {
                             if (i !== 0)
-                                return <line id="Line_2" data-name="Line 2" x1="19"
+                                return <line key={i} id="Line_2" data-name="Line 2" x1="19"
                                     transform={"translate(10 " + (20 + (50 * i)) + ")"}
-                                    fill="none" stroke="#fff" stroke-width="1" />
+                                    fill="none" stroke="#fff" strokeWidth="1" />
                         }
                         ))
                     }
