@@ -19,7 +19,7 @@ export class App extends Component<Props, State> {
 
     render() {
         return (
-            <div style={{ margin: '0px auto', maxWidth: 500, background: 'white', top: 0 }}>
+            <div style={{ margin: '0px auto', width: '100%', maxWidth: 300, background: 'white', top: 0 }}>
                 <BusinessCard />
             </div>
         )
