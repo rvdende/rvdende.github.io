@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "strict": false,
+    "target": "es6",
+    "downlevelIteration": true,
+    "moduleResolution": "node",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "typeRoots": [
+      "./src/server",
+      "./node_modules/@types"
+    ]
+  }
+}

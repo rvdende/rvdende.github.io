@@ -1,0 +1,42 @@
+{
+  "name": "rvdende.github.io",
+  "version": "1.0.0",
+  "description": "My github portfolio site",
+  "main": "index.html",
+  "scripts": {
+    "watchclient": "webpack --env dev -w --mode development --entry ./src/index.tsx --output ./bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rvdende/rvdende.github.io.git"
+  },
+  "keywords": [
+    "rouan",
+    "code",
+    "github",
+    "react"
+  ],
+  "author": "Rouan van der Ende",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/rvdende/rvdende.github.io/issues"
+  },
+  "homepage": "https://github.com/rvdende/rvdende.github.io#readme",
+  "dependencies": {
+    "@types/react": "^16.9.31",
+    "@types/react-dom": "^16.9.6",
+    "@types/react-router-dom": "^5.1.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "ts-loader": "^6.2.2",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
