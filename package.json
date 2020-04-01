@@ -4,6 +4,7 @@
   "description": "My github portfolio site",
   "main": "index.html",
   "scripts": {
+    "build": "webpack --mode production --entry ./src/index.tsx --output ./bundle.js",
     "watchclient": "webpack --env dev -w --mode development --entry ./src/index.tsx --output ./bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
