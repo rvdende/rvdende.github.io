@@ -10,20 +10,14 @@ type Props = {}
 type State = {}
 
 export class BusinessCard extends Component<Props, State> {
-    state = {
-        height: window.innerHeight
-    }
+    state = {}
 
     constructor(props: Props) {
         super(props);
-        window.addEventListener('resize', this.onResize)
     }
 
     onResize = () => {
         console.log('resize')
-        if (window.innerHeight !== this.state.height) {
-            this.setState({ height: window.innerHeight });
-        }
     }
 
     render() {
@@ -34,10 +28,9 @@ export class BusinessCard extends Component<Props, State> {
             <div style={{
                 margin: '0px auto',
                 width: '100%',
-                background: 'white',
                 top: 0,
-                height: this.state.height,
-                zIndex: 0
+                zIndex: 0,
+                marginBottom: 100
             }}>
                 <div style={{ position: 'relative', display: 'flex', flexDirection: 'row', zIndex: 10 }}>
                     <div>
@@ -46,8 +39,8 @@ export class BusinessCard extends Component<Props, State> {
                             icons={["fas fa-user-tie"]} />
                     </div>
                     <div style={{ paddingTop: 30, paddingLeft: 25 }}>
-                        <h1 style={{ color: theme.color.spotA, fontSize: '120%' }}>Rouan van der Ende</h1>
-                        <h2 style={{ color: theme.color.spotB, fontWeight: 'normal', fontSize: '100%' }}>Developer</h2>
+                        <h1>Rouan van der Ende</h1>
+                        <h2>Developer</h2>
                     </div>
                 </div>
 
@@ -67,6 +60,8 @@ export class BusinessCard extends Component<Props, State> {
                         </div>
                     </div>
                 </div>
+
+                <div style={{ clear: 'both' }} />
             </div>
         )
     }
