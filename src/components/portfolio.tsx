@@ -35,9 +35,9 @@ export class Portfolio extends Component<Props, State> {
 
     render() {
         return (
-            <div style={{ background: theme.color.spotA, padding: 35 }} >
+            <div style={{ background: theme.color.backgroundA, padding: 35 }} >
 
-                <div style={{ background: theme.color.spotA, color: 'white' }}>
+                <div style={{ color: 'white' }}>
                     <h1 style={{ color: 'white' }}><i className="fas fa-briefcase" /> PORTFOLIO</h1>
                 </div>
 
